@@ -1,0 +1,86 @@
+@import '../fonts/stylesheet.css';    
+
+/* fonts and colors */
+
+body {
+    margin: 0;
+    background-color: #fdf0d5;
+}
+p {
+    font-family: 'Chai', Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+    font-family: 'Chai', Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-family: 'National Park R', Arial, Helvetica, sans-serif;
+    color: #28afb0;
+}
+ul {
+    font-family: 'National Park R', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+nav {
+    font-family: 'Chai', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* common elements */
+
+header {
+    text-align: center;
+    background-color: #eb5e55;
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+}
+
+/* portfolio page elements */
+
+.arttitle {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.artdesc {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.images {
+    height: 100%;
+    width: 20em;
+}
+
+/* link styling */
+
+a {
+    color: #68e1e2;
+}  
+a.downloadlink {
+    color: #007f81;
+}
+a.buttontext {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+a.visited {
+    color: #007f81;
+    text-decoration: none;
+}
+.wireframelink {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+}
+
+/* footer code */
+
+.logo {
+    transition-duration: 0.5s;
+    margin: 1.3rem 1rem 0 1rem;
+    padding: 0;
+    float: right;
+    text-decoration: none;
+    width: 1.5rem;
+}
