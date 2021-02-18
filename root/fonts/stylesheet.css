@@ -87,3 +87,30 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'NCS Radhiumz';
+    src: url('NCSRadhiumzRegular.woff2') format('woff2'),
+        url('NCSRadhiumzRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sentrix Space';
+    src: url('SentrixSpace-Regular.woff2') format('woff2'),
+        url('SentrixSpace-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sentrix';
+    src: url('Sentrix-Regular.woff2') format('woff2'),
+        url('Sentrix-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

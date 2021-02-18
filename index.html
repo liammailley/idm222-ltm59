@@ -1,97 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="root/css/master.css" rel="stylesheet" type="text/css" media="all">
+    <link href="root/master.css" rel="stylesheet" type="text/css" media="all">
     <link href="root/css/buttons.css" rel="stylesheet" type="text/css" media="all">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Mailley - Home</title>
-    <style>
-        h1.bigboldname {
-            letter-spacing: 0.6rem;
-            margin-bottom: 0;
-            margin-top: 2rem;
-            font-size: 5.5rem;
-            font-weight: bold;
-            color: #eb5e55;
-            text-shadow: 2px 2px black;
-            text-align: center;
+    <!--<style>
+        body {
+            background-image: url("root/images/colorfulportrait.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
         }
-        p.mytitles {
-            letter-spacing: 0.6rem;
-            font-size: 0.8rem;
-            text-align: center;
-            overflow: auto;
-            padding: 0 1rem;
-        }
-        h2.greetings {
-            font-size: 3rem;
-            font-weight: bold;
-            text-align: center;
-            margin: 1rem 0.5rem 0;
-        }
-        .headshot {
-            height: 100%;
-            max-width: 100%;
-            text-align: center;
-        }
-        p.bio {
-            font-size: 1.5rem;
-            text-align: center;
-            margin: 1rem;
-        }
-        nav {
-            position: sticky;
-            text-align: center;
-            top: 0;
-            width: 100%;
-            margin: 0;
-            padding: 0.2rem 0;
-            background-color: #3A3335;
-            overflow: auto;
-            max-width: 100%;
-        }
-    </style>
+    </style>-->
 </head>
 
-<body>   
+<!--
+
+Current classes/objects to keep aware of:
+.iglogo (instagram logo link)
+.lilogo (linkedin logo link)
+.ghlogo (github logo link)
+.bigbold (the big name at the top of the page)
+.bigbold-sub (the thing under my big name)
+.socials-container (flexbox container for 3 socials)
+.socials (the 3 social links on every page)
+
+General goals:
+- remove ugly taskbar and make the top heading one seamless sticky bit
+    - this means moving home/work/resume to the top (NOT A POPOUT MENU!! OVERDONE)
+- Add a bio to home page
+    - And some actual pictures of myself
+- Update the stuff I have on my Work page
+- Different font!! At least for copy. Especially on titles of Work page... looks childish
+
+TO DO:
+
+The nav bar needs a single class. Use flexbox to get HOME, WORK and RESUME on one line, preferably next to the Big Bold.
+And if that's the case, flexbox the Big Bold as well, and the Big Bold sub.
+
+RESPONSIVE IMAGES ON HOME PORTRAIT!!! Do we want this thing to fill the screen on desktop like it's been doing?
+I'm thinking better choice would be to have it fill screen on phone and even tablet. But on desktop, 
+have it be off to the side and have bio text start next to it.
+
+Get home page done, we'll worry about the other pages once we have this foundation down.
+
+-->
+
+<body>
     <header>
-        <a href="https://www.instagram.com/liammailley">
-            <img src="root/images/insta_45x45.png" alt="Instagram Logo" class="logo">
-        </a>
-        <a href="https://www.linkedin.com/in/liam-mailley-bb5b69185">
-            <img src="root/images/linkedin_45x45.png" alt="Linkedin Logo" class="logo">
-        </a>
-        <a href="https://github.com/liammailley">
-            <img src="root/images/github_45x45.png" alt="Github Logo" class="logo">
-        </a>
+        <div class="socials-container">
+            <a href="https://www.instagram.com/liammailley">
+                <img src="root/images/insta_45x45.png" alt="Instagram Logo" class="socials">
+            </a>
+            <a href="https://www.linkedin.com/in/liam-mailley-bb5b69185">
+                <img src="root/images/linkedin_45x45.png" alt="Linkedin Logo" class="socials">
+            </a>
+            <a href="https://github.com/liammailley">
+                <img src="root/images/github_45x45.png" alt="Github Logo" class="socials">
+            </a>
+        </div>
         <br>
-        <h1 class="bigboldname">
+        <h1 class="bigbold">
             LIAM MAILLEY
         </h1>
-        <p class="mytitles">
-            student - ux/ui designer
-        </p>
+        <div class="outer-nav-container">
+            <p class="bigbold-sub">
+                student - ux/ui designer
+            </p>
+            <div class="nav-container">
+                <p class="navbutton">
+                    <a class="buttontext" href="index.html">
+                        HOME
+                    </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="root/work.html">
+                        WORK
+                </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="root/resume.html">
+                        RESUME
+                    </a>
+                </p>
+            </div>
+        </div>
     </header>
-    <nav>
-        <p class="homebutton">
-            <a class="buttontext" href="index.html">
-                HOME
-            </a>
-        </p>
-        <p class="workbutton">
-            <a class="buttontext" href="root/work.html">
-                WORK
-            </a>
-        </p>
-        <p class="resumebutton">
-            <a class="buttontext" href="root/resume.html">
-                RESUME
-            </a>
-        </p>
-    </nav>
     <main>
-        <img src="root/images/colorfulportrait.png" alt="Example Image" class="headshot">
+        <picture>
+            <source type="image/webp" srcset="root/images/colorfulportrait.webp" />
+            <img src="root/images/colorfulportrait.png" alt="Self Portrait" class="headshot"/>
+        </picture>
         <h2 class="greetings">
             Hi, I'm Liam.
         </h2>
