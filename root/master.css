@@ -55,7 +55,6 @@ main {
 .nav-container {
     display: flex;
     flex-flow: row;
-    margin-left: 10px;
 }
 
 .socials {
@@ -65,7 +64,7 @@ main {
 
 .bigbold {
     letter-spacing: 0.2rem;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     font-size: 2rem;
     font-weight: bold;
     color: #000000;
@@ -85,4 +84,8 @@ main {
 .headshot {
     max-height: 100rem;
     max-width: 100%;
+}
+
+.buttontext {
+    margin: 0 10px;
 }
