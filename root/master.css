@@ -18,8 +18,8 @@ h2 {
 /* Header, Main, Etc. */
 
 header {
-    display: grid;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     background-color: #eb5e55;
     position: sticky;
@@ -32,53 +32,64 @@ header {
 
 main {
     background-color: #fdf0d5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Individual Elements */
+/* Header Elements */
 
 .socials-container {
     display: flex;
     flex-flow: row wrap;
-    align-content: flex-end;
-    justify-items: space-evenly;
+    justify-content: space-around;
     padding: auto 0;
-    margin: auto 0;
-    max-width: 15%;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.socials {
+    max-width: 2rem;
+    padding: 0 0.5rem;
 }
 
 .outer-nav-container {
     display: flex;
-    flex-flow: column;
-    max-width: 40%;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .nav-container {
     display: flex;
     flex-flow: row;
-}
-
-.socials {
-    max-width: 2rem;
-    padding: 0 1rem;
+    justify-content: center;
+    align-content: space-between;
+    max-width: 100%;
 }
 
 .bigbold {
+    display: flex;
+    justify-content: center;
     letter-spacing: 0.2rem;
-    margin: 2rem 0 0 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #000000;
     text-align: center;
-    max-width: 45%;
+    max-width: 100%;
 }
 
 .bigbold-sub {
+    display: flex;
+    justify-content: center;
     margin-left: 10px;
 }
 
+/* Body Elements */
+
 .buttontext {
     color: #68e1e2;
-    margin: 2px;
+    margin: 0 10px;
 }
 
 .headshot {
@@ -86,6 +97,15 @@ main {
     max-width: 100%;
 }
 
-.buttontext {
-    margin: 0 10px;
+.greetings {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0 1rem;
 }

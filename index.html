@@ -7,14 +7,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Mailley - Home</title>
-    <!--<style>
-        body {
+    <style>
+        /*body {
             background-image: url("root/images/colorfulportrait.png");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+        }*/
+
+        @media only screen and (min-width: 650px) {
+            header {
+                display: grid;
+                grid-template-columns: 1.5fr 3fr 1.5fr;
+                justify-content: space-evenly;
+                background-color: #eb5e55;
+                position: sticky;
+                max-width: 100%;
+                overflow: auto;
+                margin: auto;
+                top: 0;
+                padding: 0.2rem 0;
+            }
+            .socials-container {
+                display: flex;
+                flex-flow: row wrap;
+                align-content: flex-end;
+                justify-items: space-evenly;
+                padding: auto 0;
+                margin: auto 0;
+                max-width: 15%;
+            }
+            .socials {
+                max-width: 2rem;
+                padding: 0 1rem;
+            }
+            .outer-nav-container {
+                display: flex;
+                flex-flow: column;
+                max-width: 40%;
+            }
+            .nav-container {
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-start;
+            }
+            .bigbold {
+                letter-spacing: 0.2rem;
+                margin: 2rem 0 0 0;
+                font-size: 2rem;
+                font-weight: bold;
+                color: #000000;
+                text-align: center;
+                max-width: 45%;
+            }
+            .bigbold-sub {
+                margin-left: 10px;
+            }
+
+            main {
+                background-color: #fdf0d5;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .headshot {
+                max-height: 100rem;
+                max-width: 65%;
+            }
         }
-    </style>-->
+    </style>
 </head>
 
 <!--
@@ -73,22 +134,28 @@ Get home page done, we'll worry about the other pages once we have this foundati
             <div class="nav-container">
                 <p class="navbutton">
                     <a class="buttontext" href="index.html">
-                        HOME
+                        hOME
                     </a>
                 </p>
                 <p class="navbutton">
                     <a class="buttontext" href="root/work.html">
-                        WORK
+                        wORK
                 </a>
                 </p>
                 <p class="navbutton">
                     <a class="buttontext" href="root/resume.html">
-                        RESUME
+                        rESUME
+                    </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="root/bio.html">
+                        bIO
                     </a>
                 </p>
             </div>
         </div>
     </header>
+
     <main>
         <picture>
             <source type="image/webp" srcset="root/images/colorfulportrait.webp" />
