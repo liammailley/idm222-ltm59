@@ -88,7 +88,12 @@ main {
 /* Body Elements */
 
 .buttontext {
-    color: #68e1e2;
+    color: #68E1E2;
+    margin: 0 10px;
+}
+
+.youarehere {
+    color: white;
     margin: 0 10px;
 }
 
@@ -112,3 +117,6 @@ main {
     margin: 1rem 10px;
     align-content: center;
 }
+
+/* Work Page */
+
