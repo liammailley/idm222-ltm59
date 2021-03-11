@@ -120,3 +120,92 @@ main {
 
 /* Work Page */
 
+.carousel {
+    display: none;
+}
+
+.workmain {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    color: #28afb0;
+}
+.workbox {
+    text-align: center;
+    color: #28afb0;
+    border-bottom: 5px solid black;
+}
+.workboxtext {
+    font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    overflow: hidden;
+    margin: 2.5rem 0 1rem 0;
+}
+.workthumbnail {
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* Resume Page */
+
+.resumemain {
+    padding: 0.5rem;
+    max-width: 500px;
+    margin: auto;
+}
+.resumename {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+.resumeaddress {
+    text-align: center;
+    font-size: 1.4rem;
+}
+h2.resume {
+    font-size: 1.5rem;
+}
+p.resume {
+    font-size: 1rem;
+    text-align: center;
+}
+ul.resume {
+    font-size: 1.2rem;
+    font-family: 'Chai', Arial, Helvetica, sans-serif
+}
+
+a.downloadlink {
+    color: #007f81;
+}
+
+.downloadbutton {
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    transition-duration: 0.5s;
+    margin: auto;
+    max-width: 500px;
+    border-top: 5px dotted black;
+}
+.downloadbutton:active {
+    background-color: #28afb0;
+}
+
+/* Bio Page */
+
+.biopicture {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sentrix Space', 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+}
+/* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 800px */

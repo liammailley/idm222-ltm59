@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="master.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/buttons.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css" media="all">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Mailley - Work</title>
     <style>
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: 800px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 800px */
             header {
                 display: grid;
                 grid-template-columns: 1.5fr 3fr 1.5fr;
@@ -78,7 +78,43 @@
             }
             .headshot {
                 padding: 0 0 0 2rem;
-            }           
+            }
+
+            /* Non-Header Stuff */
+
+            main {
+                display: none;
+            }
+            .carousel {
+                display: block;
+                position: fixed;
+                margin-left: 10rem;
+                margin-top: 1rem;
+            }
+            .workmain {
+                max-width: 100%;
+                max-height: 100%;
+                text-align: center;
+                color: #28afb0;
+                align-items: flex-end;
+            }
+            .workbox {
+                text-align: center;
+                color: #28afb0;
+                border-bottom: 5px solid black;
+                margin: 0 1.5rem;
+            }
+            .workboxtext {
+                font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+                font-size: 1.3rem;
+                overflow: hidden;
+                margin: 2.5rem 0 1rem 0;
+            }
+            .workthumbnail {
+                width: 20rem;
+                margin: auto;
+                margin-bottom: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -152,17 +188,121 @@ Get home page done, we'll worry about the other pages once we have this foundati
                         RESUME
                     </a>
                 </p>
-                <p class="navbutton">
+                <!--<p class="navbutton">
                     <a class="buttontext" href="bio.html">
                         BIO
                     </a>
-                </p>
+                </p>-->
             </div>
         </div>
     </header>
 
-    <main>
-
+    <main class="workmain">
+        <a class="workbox" href="pages/digitalart.html">
+            <h1 class="workboxtext">
+                Digital Art
+            </h1>
+            <img src="images/inception-thumbnail.png" alt="Thumbnail" class="workthumbnail">
+        </a>
+        <a class="workbox" href="pages/physicalart.html">
+            <h1 class="workboxtext">
+                Physical Art
+            </h1>
+            <img src="images/charcoalfinal-thumbnail.png" alt="Thumbnail" class="workthumbnail">
+        </a>
+        <a class="workbox" href="pages/uxui.html">
+            <h1 class="workboxtext">
+                UX / UI
+            </h1>
+            <img src="images/piratesite-thumbnail.png" alt="Thumbnail" class="workthumbnail">
+        </a>
+        <a class="workbox" href="pages/photo.html">
+            <h1 class="workboxtext">
+                Photography
+            </h1>
+            <img src="images/walking-thumbnail.png" alt="Thumbnail" class="workthumbnail">
+        </a>
+        <!--<p>
+            
+        </p>-->
     </main>
+
+    <div class="carousel">
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                    <a href="pages/digitalart.html">
+                        <img src="images/inception-thumbnail.png" style="width:100%">
+                    </a>
+                <div class="text">Digital Art</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <a href="pages/physicalart.html">
+                    <img src="images/charcoalfinal-thumbnail.png" style="width:100%">
+                </a>
+                <div class="text">Physical Art</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <a href="pages/uxui.html">
+                    <img src="images/piratesite-thumbnail.png" style="width:100%">
+                </a>
+                <div class="text">UX / UI</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <a href="pages/photo.html">
+                    <img src="images/walking-thumbnail.png" style="width:100%">
+                </a>
+                <div class="text">Photography</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
