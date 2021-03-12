@@ -9,20 +9,29 @@ Current classes/objects to keep aware of:
 
 General goals:
 
-- remove ugly taskbar and make the top heading one seamless sticky bit
-  - this means moving home/work/resume to the top (NOT A POPOUT MENU!! OVERDONE)
-- Add a bio to home page
-  - And some actual pictures of myself
-- Update the stuff I have on my Work page
-- Different font!! At least for copy. Especially on titles of Work page... looks childish
+- all images need alt tags
+- ALL IMAGES NEED ALT TAGS
+- RUN THRU THE w3C VALIDATIONS
 
 TO DO:
 
-The nav bar needs a single class. Use flexbox to get HOME, WORK and RESUME on one line, preferably next to the Big Bold.
-And if that's the case, flexbox the Big Bold as well, and the Big Bold sub.
+Finish the 4 work pages.
 
-RESPONSIVE IMAGES ON HOME PORTRAIT!!! Do we want this thing to fill the screen on desktop like it's been doing?
-I'm thinking better choice would be to have it fill screen on phone and even tablet. But on desktop,
-have it be off to the side and have bio text start next to it.
+### BEST PRACTICES:
 
-Get home page done, we'll worry about the other pages once we have this foundation down.
+file names: all lowercase, no spaces no special characters
+coding styles: use white space. indent properly. indent nested things. put each CSS rule on its own line. USE COMMENTS.
+
+functionality: everything needs to work. IMAGES NEEEED TO BE WEBP OR RESIZED TO EXACT SIZE. ADD ANIMATIONS AND TRANSITIONS TO LINKS.
+
+design: text contrast. look at spacing, typography, measure, leading, etc. We also need inclusive design.
+
+
+TO SUBMIT:
+
+link to website project page
+link to github repo
+
+## Naming Consistency
+
+idm222-ltm59
