@@ -6,7 +6,7 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.workslides {
      box-sizing: border-box;
      display: none;
 }

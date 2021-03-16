@@ -26,8 +26,6 @@
                 display: flex;
                 flex-flow: row wrap;
                 align-content: flex-end;
-                justify-items: space-evenly;
-                padding: auto 0;
                 margin: auto 0;
                 max-width: 15%;
             }
@@ -241,34 +239,34 @@ Get home page done, we'll worry about the other pages once we have this foundati
     <div class="carousel">
         <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
+            <div class="workslides fade">
                 <div class="numbertext">1 / 4</div>
                     <a href="pages/digitalart.html">
-                        <img src="images/inception-thumbnail.png" style="width:100%">
+                        <img src="images/inception-thumbnail.png" alt="Digital Art Thumbnail" style="width:100%">
                     </a>
                 <div class="text">Digital Art</div>
             </div>
         
-            <div class="mySlides fade">
+            <div class="workslides fade">
                 <div class="numbertext">2 / 4</div>
                 <a href="pages/physicalart.html">
-                    <img src="images/charcoalfinal-thumbnail.png" style="width:100%">
+                    <img src="images/charcoalfinal-thumbnail.png" alt="Physical Art Thumbnail" style="width:100%">
                 </a>
                 <div class="text">Physical Art</div>
             </div>
         
-            <div class="mySlides fade">
+            <div class="workslides fade">
                 <div class="numbertext">3 / 4</div>
                 <a href="pages/uxui.html">
-                    <img src="images/piratesite-thumbnail.png" style="width:100%">
+                    <img src="images/piratesite-thumbnail.png" alt="UX/UI Thumbnail" style="width:100%">
                 </a>
                 <div class="text">UX / UI</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="workslides fade">
                 <div class="numbertext">4 / 4</div>
                 <a href="pages/photo.html">
-                    <img src="images/walking-thumbnail.png" style="width:100%">
+                    <img src="images/walking-thumbnail.png" alt="Photography Thumbnail" style="width:100%">
                 </a>
                 <div class="text">Photography</div>
             </div>
@@ -306,7 +304,7 @@ Get home page done, we'll worry about the other pages once we have this foundati
 
         function showSlides(n) {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = document.getElementsByClassName("workslides");
             var dots = document.getElementsByClassName("dot");
             if (n > slides.length) {slideIndex = 1}    
             if (n < 1) {slideIndex = slides.length}

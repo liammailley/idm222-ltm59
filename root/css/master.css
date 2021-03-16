@@ -43,7 +43,6 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: auto 0;
     margin: 1rem 0;
     max-width: 100%;
 }
