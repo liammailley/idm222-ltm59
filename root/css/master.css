@@ -178,6 +178,10 @@ ul.resume {
     font-family: 'Chai', Arial, Helvetica, sans-serif
 }
 
+li {
+    list-style-position: inside;
+}
+
 a.downloadlink {
     color: #007f81;
 }
