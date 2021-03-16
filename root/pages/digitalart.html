@@ -9,7 +9,7 @@
     <title>Liam Mailley - Work</title>
     <style>
         @media only screen and (min-width: 800px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 800px */
-            header {
+        header {
                 display: grid;
                 grid-template-columns: 1.5fr 3fr 1.5fr;
                 justify-content: space-evenly;
@@ -49,7 +49,6 @@
                 font-weight: bold;
                 color: #000000;
                 text-align: center;
-                max-width: 45%;
             }
             .bigbold-sub {
                 margin-left: 10px;
@@ -73,6 +72,7 @@
                 font-size: 2rem;
                 margin: 1rem 10px;
                 align-content: center;
+                max-width: 58.3125rem;
             }
             .headshot {
                 padding: 0 0 0 2rem;
@@ -105,24 +105,53 @@
                 margin: 1rem auto;
             }
         }
-
-        header {
-            display: block;
-        }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1 class="bigbold-art">
-            DIGITAL ART
-        </h1>
-        <a href="../work.html" class="backbutton">
-            ᐊ Back
-        </a>
-    </header>
-    <div class="content">
 
+    <header>
+        <div class="socials-container">
+            <a href="https://www.instagram.com/liammailley">
+                <img src="../images/insta_45x45.png" alt="Instagram Logo" class="socials">
+            </a>
+            <a href="https://www.linkedin.com/in/liam-mailley-bb5b69185">
+                <img src="../images/linkedin_45x45.png" alt="Linkedin Logo" class="socials">
+            </a>
+            <a href="https://github.com/liammailley">
+                <img src="../images/github_45x45.png" alt="Github Logo" class="socials">
+            </a>
+        </div>
+        <br>
+        <h1 class="bigbold">
+            LIAM MAILLEY
+        </h1>
+        <div class="outer-nav-container">
+            <p class="bigbold-sub">
+                student - ux/ui designer
+            </p>
+            <div class="nav-container">
+                <p class="navbutton">
+                    <a class="buttontext" href="../../index.html">
+                        HOME
+                    </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="../work.html">
+                        WORK
+                </a>
+                </p>
+                <p class="navbutton">
+                    <a class="buttontext" href="../resume.html">
+                        RESUME
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="content">
         <img src="../images/duck.webp" alt="DUCK" class="images">
         <h2 class="arttitle">
             DUCK Clothing

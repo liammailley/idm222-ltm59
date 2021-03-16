@@ -27,8 +27,9 @@ header {
     max-width: 100%;
     overflow: auto;
     margin: auto;
-    top: 0;
+    top: 1;
     padding: 0.2rem 0;
+    z-index: 1;
 }
 
 main {
@@ -91,6 +92,15 @@ main {
 .buttontext {
     color: #68E1E2;
     margin: 0 10px;
+}
+
+.buttontext:hover,
+.buttontext:focus {
+    color:#28afb0;
+}
+
+.buttontext:hover {
+	cursor: pointer;
 }
 
 .youarehere {
@@ -248,6 +258,105 @@ p.artdesc {
 
 .images {
     margin: 5px;
+}
+
+
+/* Grid Code */
+
+.gridmain {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+#topleft {
+    grid-column: 1;
+    grid-row: 1;
+    border: 5px solid #68E1E2;
+    background-image: url("../images/inception-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20.3125rem;
+    opacity: 0.5;
+}
+
+#topright {
+    grid-column: 2;
+    grid-row: 1;
+    border: 5px solid #28afb0;
+    background-image: url("../images/charcoalfinal-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20.3125rem;
+    opacity: 0.5;
+}
+
+#bottomleft {
+    grid-column: 1;
+    grid-row: 2;
+    border: 5px solid #28afb0;
+    background-image: url("../images/piratesite-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20.3125rem;
+    opacity: 0.5;
+}
+
+#bottomright {
+    grid-column: 2;
+    grid-row: 2;
+    border: 5px solid #68E1E2;
+    background-image: url("../images/walking-thumbnail.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20.3125rem;
+    opacity: 0.5;
+}
+
+#topleft:hover {
+    position: relative;
+    display: block;
+    opacity: 1;
+}
+
+#topright:hover {
+    position: relative;
+    display: block;
+    opacity: 1;
+}
+
+#bottomleft:hover {
+    position: relative;
+    display: block;
+    opacity: 1;
+}
+
+#bottomright:hover {
+    position: relative;
+    display: block;
+    opacity: 1;
+}
+
+.overlay {
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.overlay:hover {
+    color:#68E1E2;
+    background-color:#eb5e55;
+}
+
+.overlayText {
+    color:#68E1E2;
+    text-shadow: 2px 2px black;
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+}
+
+.gridimage {
+    width: 100%
 }
 
 /* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 800px */
