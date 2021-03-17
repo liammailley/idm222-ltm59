@@ -80,30 +80,108 @@
             
             /* Non-Header Styling */
 
-            .bigbold-art {
-                display: block;
-                margin: 2rem 0 0 0;
-                font-size: 2rem;
-                font-weight: bold;
-                color: #000000;
-                text-align: center;
+            /* Content Pages Grid Code */
+
+            .contentmain {
+                display: grid;
+                grid-template-columns: 50% 50%;
             }
 
-            .backbutton {
-                display: block;
-                font-family: 'NCS Radhiumz', 'National Park R', Arial, Helvetica, sans-serif;
-                font-size: 1.5rem;
-                color: #68E1E2;
+            .contenttitle {
+                font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+                margin: 1rem;
+            }
+
+            .contentdesc {
+                margin: 1rem;
+            }
+
+            .contentimages {
                 max-width: 100%;
-                text-align: center;
-                margin: 0.4rem auto;
+                max-height: 100%;
             }
-            .content {
-                display: flex;
-                flex-direction: column;
-                max-width: 35rem;
-                margin: 1rem auto;
+            #topleft {
+                grid-column: 1;
+                grid-row: 1;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
             }
+
+            #topright {
+                grid-column: 1;
+                grid-row: 2;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #bottomleft {
+                grid-column: 1;
+                grid-row: 3;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #bottomright {
+                grid-column: 1;
+                grid-row: 4;
+                border: 8px solid #fdf0d5;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+        }
+
+
+        
+        .contentmain {
+                display: grid;
+                grid-template: 50% 50% / 50% 50%;
+            }
+
+        #topleft {
+            grid-column: 1;
+            grid-row: 1;
+            border: 8px solid #fdf0d5;
+            background-image: url("../images/walking.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        #topright {
+            grid-column: 2;
+            grid-row: 1;
+            border: 8px solid #fdf0d5;
+            background-image: url("../images/mugs.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        #bottomleft {
+            grid-column: 1;
+            grid-row: 2;
+            background-image: url("../images/metedeconk.webp");
+            border: 8px solid #fdf0d5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
+        }
+
+        #bottomright {
+            grid-column: 2;
+            grid-row: 2;
+            background-image: url("../images/theamericandream.webp");
+            border: 8px solid #fdf0d5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20.3125rem;
         }
     </style>
 </head>
@@ -150,17 +228,24 @@
         </div>
     </header>
 
-    <div class="content">
-        <img src="../images/walking.webp" alt="Walking" class="images">
-        <img src="../images/mugs.webp" alt="Mugs" class="images">
-        <img src="../images/metedeconk.webp" alt="Metedeconk" class="images">
-        <img src="../images/theamericandream.webp" alt="The American Dream" class="images">
-        <img src="../images/stressed.webp" alt="Stressed" class="images">
-        <a href="https://www.instagram.com/liammphoto/">
-            <h2 class="arttitle">
-                Visit my photography Insta for more!
-            </h2>
-        </a>
-    </div>
+    <main class="contentmain">
+
+        <div id="topleft">
+        </div>
+
+        <div id="topright">
+        </div>
+
+        <div id="bottomleft">
+        </div>
+
+        <div id="bottomright">
+        </div>
+    </main>
+    <a href="https://www.instagram.com/liammphoto/" class="visitformore">
+        <h2 class="contenttitle">
+            Visit my photography Insta for more!
+        </h2>
+    </a>
 </body>
 </html>

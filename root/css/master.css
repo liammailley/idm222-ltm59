@@ -330,12 +330,13 @@ p.artdesc {
 
 .contentmain {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
 }
 
 .contenttitle {
     font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
     margin: 1rem;
+    color:#007f81;
 }
 
 .contentdesc {
@@ -353,144 +354,131 @@ p.artdesc {
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
     text-align: right;
     float: right;
 }
 
 #firstright {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
-    text-align: left;
-    float: left;
+    margin: auto;
 }
 
 #secondleft {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 4;
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
-    text-align: right;
-    float: right;
+    margin: auto;
 }
 
 #secondright {
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: 1;
+    grid-row: 3;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
     text-align: left;
     float: left;
 }
 
 #thirdleft {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 5;
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
     text-align: right;
     float: right;
 }
 
 #thirdright {
-    grid-column: 2;
-    grid-row: 3;
+    grid-column: 1;
+    grid-row: 6;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
-    text-align: left;
-    float: left;
+    margin: auto;
 }
 
 #fourthleft {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 8;
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
-    text-align: right;
-    float: right;
+    margin: auto;
 }
 
 #fourthright {
-    grid-column: 2;
-    grid-row: 4;
+    grid-column: 1;
+    grid-row: 7;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
     text-align: left;
     float: left;
 }
 
 #fifthleft {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 9;
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
     text-align: right;
     float: right;
 }
 
 #fifthright {
-    grid-column: 2;
-    grid-row: 5;
+    grid-column: 1;
+    grid-row: 10;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
-    text-align: left;
-    float: left;
+    margin: auto;
 }
 
 #sixthleft {
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 12;
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
-    text-align: right;
-    float: right;
+    margin: auto;
 }
 
 #sixthright {
-    grid-column: 2;
-    grid-row: 6;
+    grid-column: 1;
+    grid-row: 11;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
     text-align: left;
     float: left;
 }
 
 #seventhleft {
     grid-column: 1;
-    grid-row: 7;
+    grid-row: 13;
     border: 20px solid #fdf0d5;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 25rem;
     text-align: right;
     float: right;
 }
 
 #seventhright {
-    grid-column: 2;
-    grid-row: 7;
+    grid-column: 1;
+    grid-row: 14;
     border: 20px solid #fdf0d5;
     max-width: 100%;
-    height: 25rem;
-    text-align: left;
-    float: left;
+    margin: auto;
+}
+
+.wireframelink {
+    text-align: center;
+}
+
+.visitformore {
+    text-align: center;
 }
 /* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 800px */
