@@ -29,7 +29,7 @@ header {
     margin: auto;
     top: 1;
     padding: 0.2rem 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 main {
@@ -265,80 +265,70 @@ p.artdesc {
 
 .gridmain {
     display: grid;
-    grid-template: 50% 50% / 50% 50%;
+    grid-template: 25% 25% 25% 25% / 100%;
 }
 
 #topleft {
     grid-column: 1;
     grid-row: 1;
-    border: 5px solid #68E1E2;
-    background-image: url("../images/inception-thumbnail.png");
+    background-image: url("../images/inception.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20.3125rem;
-    opacity: 0.5;
 }
 
 #topright {
-    grid-column: 2;
-    grid-row: 1;
-    border: 5px solid #28afb0;
-    background-image: url("../images/charcoalfinal-thumbnail.png");
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url("../images/charcoalfinal.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20.3125rem;
-    opacity: 0.5;
 }
 
 #bottomleft {
     grid-column: 1;
-    grid-row: 2;
-    border: 5px solid #28afb0;
-    background-image: url("../images/piratesite-thumbnail.png");
+    grid-row: 3;
+    background-image: url("../images/piratesite.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20.3125rem;
-    opacity: 0.5;
 }
 
 #bottomright {
-    grid-column: 2;
-    grid-row: 2;
-    border: 5px solid #68E1E2;
-    background-image: url("../images/walking-thumbnail.png");
+    grid-column: 1;
+    grid-row: 4;
+    background-image: url("../images/walking.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20.3125rem;
-    opacity: 0.5;
 }
 
 #topleft:hover {
     position: relative;
     display: block;
-    opacity: 1;
+    background-color: black;
 }
 
 #topright:hover {
     position: relative;
     display: block;
-    opacity: 1;
 }
 
 #bottomleft:hover {
     position: relative;
     display: block;
-    opacity: 1;
 }
 
 #bottomright:hover {
     position: relative;
     display: block;
-    opacity: 1;
 }
 
 .overlay {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color:#eb5e55;
 }
 
 .overlay:hover {
@@ -348,11 +338,12 @@ p.artdesc {
 
 .overlayText {
     color:#68E1E2;
-    text-shadow: 2px 2px black;
+    text-shadow: 0 0 10px black;
     display: flex;
     justify-content: center;
     margin-top: 8rem;
     font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+    z-index: 1;
 }
 
 .gridimage {

@@ -80,45 +80,95 @@
 
             /* Non-Header Styling */
 
-            .carousel {
+            /* Grid Code */
+
+            .gridmain {
+                display: grid;
+                grid-template: 50% 50% / 50% 50%;
+            }
+
+            #topleft {
+                grid-column: 1;
+                grid-row: 1;
+                background-image: url("images/inception.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #topright {
+                grid-column: 2;
+                grid-row: 1;
+                background-image: url("images/charcoalfinal.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #bottomleft {
+                grid-column: 1;
+                grid-row: 2;
+                background-image: url("images/piratesite.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #bottomright {
+                grid-column: 2;
+                grid-row: 2;
+                background-image: url("images/walking.webp");
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 20.3125rem;
+            }
+
+            #topleft:hover {
+                position: relative;
+                background-color: black;
+                opacity: 0.5
                 display: block;
-                position: fixed;
-                margin-left: 6rem;
-                margin-top: 1rem;
             }
-            .workmain {
-                max-width: 100%;
-                max-height: 100%;
-                text-align: center;
-                color: #28afb0;
-                align-items: flex-end;
+
+            #topright:hover {
+                position: relative;
+                display: block;
             }
-            .workbox {
-                text-align: center;
-                color: #28afb0;
-                border-bottom: 5px solid black;
-                margin: 0 1.5rem;
+
+            #bottomleft:hover {
+                position: relative;
+                display: block;
             }
-            .workboxtext {
+
+            #bottomright:hover {
+                position: relative;
+                display: block;
+            }
+
+            .overlay {
+                margin-left: 4rem;
+                margin-right: 4rem;
+                background-color: transparent;
+            }
+
+            .overlay:hover {
+                color:#68E1E2;
+                background-color:#eb5e55;
+                box-shadow: 5px 10px;
+            }
+
+            .overlayText {
+                color:#68E1E2;
+                text-shadow: 0 0 10px black;
+                display: flex;
+                justify-content: center;
+                margin-top: 8rem;
                 font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
-                font-size: 1.3rem;
-                overflow: hidden;
-                margin: 2.5rem 0 1rem 0;
+                z-index: 1;
             }
-            .workthumbnail {
-                width: 20rem;
-                margin: auto;
-                margin-bottom: 0.5rem;
-            }
-            .additionalcomments {
-                display: block;
-                position: fixed;
-                max-width: 10rem;
-                margin-top: 3rem;
-                margin-left: 40rem;
-            }
-            .additionalcomments {
-                text-align: left;
+
+            .gridimage {
+                width: 100%
             }
         }
     </style>
@@ -165,155 +215,34 @@
         </div>
     </header>
 
-    <!--
-    <main class="workmain">
-        <a class="workbox" href="pages/digitalart.html">
-            <h1 class="workboxtext">
-                Digital Art
-            </h1>
-            <img src="images/inception-thumbnail.png" alt="Thumbnail" class="workthumbnail">
-        </a>
-        <a class="workbox" href="pages/physicalart.html">
-            <h1 class="workboxtext">
-                Physical Art
-            </h1>
-            <img src="images/charcoalfinal-thumbnail.png" alt="Thumbnail" class="workthumbnail">
-        </a>
-        <a class="workbox" href="pages/uxui.html">
-            <h1 class="workboxtext">
-                UX / UI
-            </h1>
-            <img src="images/piratesite-thumbnail.png" alt="Thumbnail" class="workthumbnail">
-        </a>
-        <a class="workbox" href="pages/photo.html">
-            <h1 class="workboxtext">
-                Photography
-            </h1>
-            <img src="images/walking-thumbnail.png" alt="Thumbnail" class="workthumbnail">
-        </a>
-        <!--<p>
-            
-        </p>
-    </main>
-
-    <div class="carousel">
-        <div class="slideshow-container">
-            <div class="workslides fade">
-                <div class="numbertext">1 / 4</div>
-                    <a href="pages/digitalart.html">
-                        <img src="images/inception-thumbnail.png" alt="Digital Art Thumbnail" style="width:100%">
-                    </a>
-                <div class="text">Digital Art</div>
-            </div>
-        
-            <div class="workslides fade">
-                <div class="numbertext">2 / 4</div>
-                <a href="pages/physicalart.html">
-                    <img src="images/charcoalfinal-thumbnail.png" alt="Physical Art Thumbnail" style="width:100%">
-                </a>
-                <div class="text">Physical Art</div>
-            </div>
-        
-            <div class="workslides fade">
-                <div class="numbertext">3 / 4</div>
-                <a href="pages/uxui.html">
-                    <img src="images/piratesite-thumbnail.png" alt="UX/UI Thumbnail" style="width:100%">
-                </a>
-                <div class="text">UX / UI</div>
-            </div>
-
-            <div class="workslides fade">
-                <div class="numbertext">4 / 4</div>
-                <a href="pages/photo.html">
-                    <img src="images/walking-thumbnail.png" alt="Photography Thumbnail" style="width:100%">
-                </a>
-                <div class="text">Photography</div>
-            </div>
-        
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-    </div>
-
-    <p class="additionalcomments">
-        Check out some of my work by clicking on a thumbnail.
-    <p>
-
-
-    <script> /* JAVASCRIPT COMPONENT */
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("workslides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
-    </script>
-
--->
-
     <main class="gridmain">
-        <div id="topleft">
-            <a href="pages/digitalart.html">
+        <div id="topleft" onclick="location.href='pages/digitalart.html';" style="cursor: pointer;">
                 <div class="overlay">
                     <h1 class="overlayText">
                         Digital Art
                     </h1>
                 </div>
-            </a>
         </div>
-        <div id="topright">
-            <a href="pages/physicalart.html">
+        <div id="topright" onclick="location.href='pages/physicalart.html';" style="cursor: pointer;">
                 <div class="overlay">
                     <h1 class="overlayText">
                         Physical Art
                     </h1>
                 </div>
-            </a>
         </div>
-        <div id="bottomleft">
-            <a href="pages/uxui.html">
+        <div id="bottomleft" onclick="location.href='pages/uxui.html';" style="cursor: pointer;">
                 <div class="overlay">
                     <h1 class="overlayText">
                         UX / UI
                     </h1>
                 </div>
-            </a>
         </div>
-        <div id="bottomright">
-            <a href="pages/photo.html">
+        <div id="bottomright" onclick="location.href='pages/photo.html';" style="cursor: pointer;">
                 <div class="overlay">
                     <h1 class="overlayText">
                         Photography
                     </h1>
                 </div>
-            </a>
         </div>
     </main>
 </body>
